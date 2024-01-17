@@ -1,0 +1,84 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+/* verde/azul claro */
+$cor-inicial: #9beab9
+
+/* verde médio */
+$cor-final: #77eb20
+
+.carrossel
+	width: 100%
+	overflow-x: scroll
+	white-space: nowrap
+	space-between: 20px
+
+.flexAlinhaColuna
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+body
+	background: linear-gradient( $cor-inicial, $cor-final)
+	@extend .flexAlinhaColuna
+	
+.containerImagens
+	@extend .carrossel
+
+img
+	width: auto
+	height: 250px
+	
+
+.containerInformacoes
+	@extend .flexAlinhaColuna
+	gap: 10px
+	width: 100%
+
+.containerInformacoes iframe
+	width: 100%
+
+.containerInformacoes p
+	width: 100%
+	text-align: center
+
+h1
+	margin: 40px
+
+h3
+	margin: 20px
+
+.videoEquipe
+	position: relative
+	width: 100%
+
+.convite, .contato, .containerImagens, .videoEquipe
+	margin: 40px
+
+.containerVideos
+	display: flex
+	flex-direction: column
+	align-items: center
+	
+.contato
+	@extend .flexAlinhaColuna
+	
+@media (max-width: 393px)
+.containerVideos
+	gap: 20px
+	width: 100%
+
+.containerVideos iframe
+	width: 100%
+
+.containerVideos h3
+	margin-top: 80px
+
+@media (max-width: 618px)
+
+
+@media (max-width: 768px)
+	
