@@ -63,6 +63,9 @@ h3 {
 a {
   text-decoration: none; }
 
+.alerta {
+  font-size: 11px; }
+
 .containerVideos {
   gap: 20px;
   width: 100%; }
