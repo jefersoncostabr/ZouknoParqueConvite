@@ -38,7 +38,7 @@ img
 	gap: 10px
 	width: 100%
 
-.containerInformacoes iframe
+#iframeMaps
 	width: 100%
 
 .containerInformacoes p
@@ -81,18 +81,33 @@ a
 
 	
 @media (max-width: 393px)
-.containerVideos
-	gap: 20px
-	width: 100%
+	.containerVideos
+		gap: 20px
+		width: 100%
 
-.containerVideos iframe
-	width: 100%
+	.containerVideos iframe
+		width: 100%
 
-.containerVideos h3
-	margin-top: 80px
-
-@media (max-width: 618px)
+	.containerVideos h3
+		margin-top: 80px
 
 
-@media (max-width: 768px)
 	
+@media (min-width: 394) and (max-width: 618px)
+
+	.convite
+		margin: 60px
+
+
+
+@media (min-width: 619) and (max-width: 768px)
+	
+	.videoEquipe
+		width: 90%
+		height: 90% auto
+
+	#iframeMaps
+		width: 90%
+
+	.containerVideos iframe
+		width: 90%
