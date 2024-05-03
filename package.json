@@ -1,0 +1,12 @@
+{
+  "name": "zouknoparqueconvite",
+  "version": "1.0.0",
+  "description": "1-criar o arquivo de estilo sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/sass:src/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
