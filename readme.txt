@@ -1,9 +1,12 @@
 1-criar o arquivo de estilo sass
 
-2-digitar o cod no terminal
+2-digitar o cod no terminal(tem que ter o sas instalado -> npm i -g sass)
 
-3-sass --watch src/sass/style.sass:src/css/style.css
-
+3-use o código abaixo
+sass --watch src/sass/style.sass:src/css/style.css
+                    onde esta   depois   como vai ficar
+-em caso de erro coloque npx antes
+npx sass --watch src/sass/style.sass:src/css/style.css
                     onde esta   depois   como vai ficar
 
 

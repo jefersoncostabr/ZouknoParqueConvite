@@ -24,14 +24,17 @@ $cor-final: #77eb20
 body
 	background: linear-gradient( $cor-inicial, $cor-final)
 	@extend .flexAlinhaColuna
-	
+
 .containerImagens
 	@extend .carrossel
 
 img
 	width: auto
 	height: 250px
-	
+
+#ultimoCartaz
+	width: 70vw
+	height: auto
 
 .containerInformacoes
 	@extend .flexAlinhaColuna
@@ -66,7 +69,7 @@ h3
 	display: flex
 	flex-direction: column
 	align-items: center
-	
+
 .contato
 	@extend .flexAlinhaColuna
 	gap: 1rem
@@ -80,11 +83,8 @@ a
 
 .alerta
 	font-size: 11px
-	
 
-
-	
-@media (max-width: 393px)
+@media (max-width: 394px)
 	.containerVideos
 		gap: 20px
 		width: 100%
@@ -95,23 +95,27 @@ a
 	.containerVideos h3
 		margin-top: 80px
 
+	#ultimoCartaz
+		// box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
+		width: 100vw
+		height: auto
 
-	
-@media (min-width: 394) and (max-width: 618px)
-
+@media (min-width: 394px) and (max-width: 618px)
 	.convite
 		margin: 60px
-
-
+	#ultimoCartaz
+		width: 100vw
+		height: auto
+		// box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
 
 @media (min-width: 619) and (max-width: 768px)
-	
 	.videoEquipe
 		width: 90%
 		height: 90% auto
 
-	// #iframeMaps
-	// 	width: 90%
-
 	.containerVideos iframe
 		width: 90%
+
+#ultimoCartaz
+	width: 100vw
+	height: auto

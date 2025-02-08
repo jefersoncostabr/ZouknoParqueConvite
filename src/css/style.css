@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* verde/azul claro */
 /* verde médio */
@@ -10,85 +11,125 @@
   width: 100%;
   overflow-x: scroll;
   white-space: nowrap;
-  space-between: 20px; }
+  space-between: 20px;
+}
 
-.flexAlinhaColuna, body, .containerInformacoes, .contato, .contatoIndividual {
+.flexAlinhaColuna, .contatoIndividual, .contato, .containerInformacoes, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 body {
-  background: linear-gradient(#9beab9, #77eb20); }
+  background: linear-gradient(#9beab9, #77eb20);
+}
 
 img {
   width: auto;
-  height: 250px; }
+  height: 250px;
+}
+
+#ultimoCartaz {
+  width: 70vw;
+  height: auto;
+}
 
 .containerInformacoes {
   gap: 10px;
-  width: 100%; }
+  width: 100%;
+}
 
 iframe {
-  max-width: 100vw; }
+  max-width: 100vw;
+}
 
 #iframeMaps {
   width: 100%;
-  max-width: 100vw; }
+  max-width: 100vw;
+}
 
 .containerInformacoes p {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 h1 {
-  margin: 40px; }
+  margin: 40px;
+}
 
 h3 {
-  margin: 20px; }
+  margin: 20px;
+}
 
 .videoEquipe {
   position: relative;
-  width: 100%; }
+  width: 100%;
+}
 
 .convite, .contato, .containerImagens, .videoEquipe {
-  margin: 40px; }
+  margin: 40px;
+}
 
 .containerVideos {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 .contato {
-  gap: 1rem; }
+  gap: 1rem;
+}
 
 .contatoIndividual {
-  width: 100%; }
+  width: 100%;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .alerta {
-  font-size: 11px; }
+  font-size: 11px;
+}
 
-@media (max-width: 393px) {
+@media (max-width: 394px) {
   .containerVideos {
     gap: 20px;
-    width: 100%; }
-
+    width: 100%;
+  }
   .containerVideos iframe {
-    width: 100%; }
-
+    width: 100%;
+  }
   .containerVideos h3 {
-    margin-top: 80px; } }
-@media (min-width: 394) and (max-width: 618px) {
+    margin-top: 80px;
+  }
+  #ultimoCartaz {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media (min-width: 394px) and (max-width: 618px) {
   .convite {
-    margin: 60px; } }
+    margin: 60px;
+  }
+  #ultimoCartaz {
+    width: 100vw;
+    height: auto;
+  }
+}
 @media (min-width: 619) and (max-width: 768px) {
   .videoEquipe {
     width: 90%;
-    height: 90% auto; }
-
+    height: 90% auto;
+  }
   .containerVideos iframe {
-    width: 90%; } }
+    width: 90%;
+  }
+}
+#ultimoCartaz {
+  width: 100vw;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
