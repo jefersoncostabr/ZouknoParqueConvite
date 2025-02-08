@@ -14,7 +14,7 @@
   space-between: 20px;
 }
 
-.flexAlinhaColuna, .contatoIndividual, .contato, .containerInformacoes, body {
+.flexAlinhaColuna, .contatoIndividual, .contato, #containerGrupow, .containerInformacoes, body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,6 +68,17 @@ h3 {
 }
 
 .convite, .contato, .containerImagens, .videoEquipe {
+  margin: 40px;
+}
+
+#whatsapp {
+  font-size: 80px;
+  margin: 20px;
+  margin-left: 48px;
+  cursor: pointer;
+}
+
+#containerGrupow {
   margin: 40px;
 }
 

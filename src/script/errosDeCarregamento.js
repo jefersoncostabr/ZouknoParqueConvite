@@ -1,11 +1,10 @@
-function iframeErro() {
+function iframeErro(elemento) {
     console.log("Erro ao carregar a iframe!");
-    document.getElementById('iframeMaps').innerHTML = 'Erro ao carregar a imagem!';
+    document.getElementById(elemento).innerHTML = 'Erro ao carregar a imagem!';
+    recarregarIframe(elemento);
 }
 
-function recarregarIframe() {
-    var iframe = document.getElementById('iframeMaps');
+function recarregarIframe(e) {
+    var iframe = document.getElementById(e);
     iframe.src = iframe.src; // Esta linha força o recarregamento do iframe
 }
-
-recarregarIframe();

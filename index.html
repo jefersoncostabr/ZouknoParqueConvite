@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="src/icos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -24,8 +25,9 @@
 
     <!-- Video de convite da equipe -->
     <!-- <iframe class="videoEquipe" width="560" height="315" src="https://youtu.be/TBeT5Cbx9Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <script src="./src/script/errosDeCarregamento.js"></script>
     
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TBeT5Cbx9Hk?si=yKSPEWBVZWDUJBpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe onerror="iframeErro('videoAbertura')" id="videoAbertura" width="560" height="315" src="https://www.youtube.com/embed/TBeT5Cbx9Hk?si=yKSPEWBVZWDUJBpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <div class="containerInformacoes">
         <h3 class="informacoesTitulo">Informações:</h3>
@@ -34,16 +36,20 @@
         <p>Parque do Sabiá - Quiosque multiuso</p>
         <p class="alerta">*Em caso de não carregamento atualize a página.</p>
 
-        <iframe onerror="iframeErro()" id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.441299581076!2d-48.241826124976754!3d-18.911851182259213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44f146fff876b%3A0x1800852b327ec7d4!2sQuiosque%20Multiuso%20-%20Parque%20do%20Sabi%C3%A1!5e0!3m2!1sen!2sbr!4v1704998417115!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe onerror="iframeErro('iframemaps')" id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.441299581076!2d-48.241826124976754!3d-18.911851182259213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44f146fff876b%3A0x1800852b327ec7d4!2sQuiosque%20Multiuso%20-%20Parque%20do%20Sabi%C3%A1!5e0!3m2!1sen!2sbr!4v1704998417115!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="containerGrupoW">
+        <i id="whatsapp" class="fa-brands fa-whatsapp" onclick="window.open('https://chat.whatsapp.com/DtY7tycAFax2BgYp5ThrWi')"></i>
+        <p class="pGrupoW">Clique e participe do grupo</p>
     </div>
 
     
     <div class="containerVideos">
         <h3>Bons momentos com gente foda </h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-5qrWJcjWYY?si=0F45Tyy4YbeSAG4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9MVOg1m2FEM?si=lMM37CnePz1_enok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TOGXAZLo2yM?si=ae2kMDYvrJ03C4jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/W2CCnz71gLQ?si=PUIYqf5xgWS_g8cD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe onerror="iframeErro('videoIlustrativo1')" id="videoIlustrativo1" width="560" height="315" src="https://www.youtube.com/embed/-5qrWJcjWYY?si=0F45Tyy4YbeSAG4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe onerror="iframeErro('videoIlustrativo2')" id="videoIlustrativo2" width="560" height="315" src="https://www.youtube.com/embed/9MVOg1m2FEM?si=lMM37CnePz1_enok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe onerror="iframeErro('videoIlustrativo3')" id="videoIlustrativo3" width="560" height="315" src="https://www.youtube.com/embed/TOGXAZLo2yM?si=ae2kMDYvrJ03C4jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe onerror="iframeErro('videoIlustrativo4')" id="videoIlustrativo4" width="560" height="315" src="https://www.youtube.com/embed/W2CCnz71gLQ?si=PUIYqf5xgWS_g8cD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="contato">
@@ -66,5 +72,4 @@
     </div>
 </body>
 <script src="./src/script/script.js"></script>
-<script src="./src/script/errosDeCarregamento.js"></script>
 </html>
