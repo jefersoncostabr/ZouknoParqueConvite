@@ -1,13 +1,20 @@
+// Automatizar SASS
+// npx sass --watch src/sass/style.sass:src/css/style.css
+
 *
 	margin: 0
 	padding: 0
 	box-sizing: border-box
 
 /* verde/azul claro */
-$cor-inicial: #9beab9
+$corInicial: #9beab9
 
 /* verde médio */
-$cor-final: #77eb20
+$corFinal: #77eb20
+
+body
+	background: linear-gradient( $corInicial, $corFinal)
+	@extend .flexAlinhaColuna
 
 .carrossel
 	width: 100%
@@ -21,9 +28,6 @@ $cor-final: #77eb20
 	align-items: center
 	justify-content: center
 
-body
-	background: linear-gradient( $cor-inicial, $cor-final)
-	@extend .flexAlinhaColuna
 
 .containerImagens
 	@extend .carrossel
@@ -32,6 +36,7 @@ img
 	width: auto
 	height: 250px
 
+// Cartaz o último evento realizado ou atual
 #ultimoCartaz
 	width: 70vw
 	height: auto
@@ -43,6 +48,7 @@ img
 
 iframe
 	max-width: 100vw
+	heigth: auto
 
 #iframeMaps
 	width: 100%
@@ -84,12 +90,20 @@ h3
 	display: flex
 	flex-direction: column
 	align-items: center
+	text-align: center
+
+.containervidIlustrativos
+	display: flex
+
+.containerImagens, iframe
+	width: 35%
+	height: auto
 
 .contato
 	@extend .flexAlinhaColuna
 	gap: 1rem
 
-.contatoIndividual
+.contato__Individual
 	@extend .flexAlinhaColuna
 	width: 100%
 
@@ -110,6 +124,16 @@ a
 	.containerVideos h3
 		margin-top: 80px
 
+	.containerVid__Ilustrativos
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+	.containerImagens, iframe
+		width: 100%
+		height: 100%
+
 	#ultimoCartaz
 		// box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
 		width: 100vw
@@ -118,12 +142,24 @@ a
 @media (min-width: 394px) and (max-width: 618px)
 	.convite
 		margin: 60px
+
 	#ultimoCartaz
 		width: 100vw
 		height: auto
 		// box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
 
-@media (min-width: 619) and (max-width: 768px)
+	.containervidIlustrativos
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		
+	.containerImagens, iframe
+		width: 100%
+		height: 100%
+
+@media (min-width: 619px) and (max-width: 768px)
+
 	.videoEquipe
 		width: 90%
 		height: 90% auto
@@ -131,6 +167,17 @@ a
 	.containerVideos iframe
 		width: 90%
 
-#ultimoCartaz
-	width: 100vw
-	height: auto
+	#ultimoCartaz
+		width: 100vw
+		height: auto
+		// box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
+
+	.containervidIlustrativos
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+	.containerImagens, iframe
+		width: 100%
+		height: 100%

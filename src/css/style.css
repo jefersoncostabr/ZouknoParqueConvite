@@ -7,6 +7,10 @@
 
 /* verde/azul claro */
 /* verde médio */
+body {
+  background: linear-gradient(#9beab9, #77eb20);
+}
+
 .carrossel, .containerImagens {
   width: 100%;
   overflow-x: scroll;
@@ -14,15 +18,11 @@
   space-between: 20px;
 }
 
-.flexAlinhaColuna, .contatoIndividual, .contato, #containerGrupow, .containerInformacoes, body {
+.flexAlinhaColuna, .contato__Individual, .contato, #containerGrupow, .containerInformacoes, body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-body {
-  background: linear-gradient(#9beab9, #77eb20);
 }
 
 img {
@@ -42,6 +42,7 @@ img {
 
 iframe {
   max-width: 100vw;
+  heigth: auto;
 }
 
 #iframeMaps {
@@ -86,13 +87,23 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.containervidIlustrativos {
+  display: flex;
+}
+
+.containerImagens, iframe {
+  width: 35%;
+  height: auto;
 }
 
 .contato {
   gap: 1rem;
 }
 
-.contatoIndividual {
+.contato__Individual {
   width: 100%;
 }
 
@@ -115,6 +126,16 @@ a {
   .containerVideos h3 {
     margin-top: 80px;
   }
+  .containerVid__Ilustrativos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerImagens, iframe {
+    width: 100%;
+    height: 100%;
+  }
   #ultimoCartaz {
     width: 100vw;
     height: auto;
@@ -128,8 +149,18 @@ a {
     width: 100vw;
     height: auto;
   }
+  .containervidIlustrativos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerImagens, iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
-@media (min-width: 619) and (max-width: 768px) {
+@media (min-width: 619px) and (max-width: 768px) {
   .videoEquipe {
     width: 90%;
     height: 90% auto;
@@ -137,10 +168,20 @@ a {
   .containerVideos iframe {
     width: 90%;
   }
-}
-#ultimoCartaz {
-  width: 100vw;
-  height: auto;
+  #ultimoCartaz {
+    width: 100vw;
+    height: auto;
+  }
+  .containervidIlustrativos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerImagens, iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
