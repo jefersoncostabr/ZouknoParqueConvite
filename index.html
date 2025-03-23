@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="src/icos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/botao.css">
+    <link rel="stylesheet" href="./src/css/cartao.css">
 </head>
 <body>
 
@@ -36,40 +38,101 @@
         <p>Parque do Sabiá - Quiosque multiuso</p>
         <p class="alerta">*Em caso de não carregamento atualize a página.</p>
 
-        <iframe onerror="iframeErro('iframemaps')" id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.441299581076!2d-48.241826124976754!3d-18.911851182259213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44f146fff876b%3A0x1800852b327ec7d4!2sQuiosque%20Multiuso%20-%20Parque%20do%20Sabi%C3%A1!5e0!3m2!1sen!2sbr!4v1704998417115!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- foi retirado o lazy load para diminuir os erros
+        loading="lazy" -->
+        <iframe onerror="iframeErro('iframemaps')" id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.441299581076!2d-48.241826124976754!3d-18.911851182259213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44f146fff876b%3A0x1800852b327ec7d4!2sQuiosque%20Multiuso%20-%20Parque%20do%20Sabi%C3%A1!5e0!3m2!1sen!2sbr!4v1704998417115!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <button class="btn1" onclick="abrirGoogleMaps()">Abrir no maps</button>
+        <script>
+            function abrirGoogleMaps() {
+                let enderecoDestino = "Quiosque Multiuso - Parque do Sabiá"; // Altere para o endereço desejado
+                let enderecoDestinoEncoded = encodeURIComponent(enderecoDestino);
+                
+                let url = `https://www.google.com/maps/dir/?api=1&destination=${enderecoDestinoEncoded}`;
+                
+                window.open(url, "_blank"); // Abre em uma nova aba
+            }
+        </script>
     </div>
     <div class="containerGrupoW">
-        <i id="whatsapp" class="fa-brands fa-whatsapp" onclick="window.open('https://chat.whatsapp.com/DtY7tycAFax2BgYp5ThrWi')"></i>
+        <i id="whatsapp" class="fa-brands fa-whatsapp btnW" onclick="window.open('https://chat.whatsapp.com/DtY7tycAFax2BgYp5ThrWi')"></i>
         <p class="pGrupoW">Clique e participe do grupo</p>
     </div>
 
     
     <div class="containerVideos">
         <h3>Bons momentos com gente foda </h3>
-        <iframe onerror="iframeErro('videoIlustrativo1')" id="videoIlustrativo1" width="560" height="315" src="https://www.youtube.com/embed/-5qrWJcjWYY?si=0F45Tyy4YbeSAG4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe onerror="iframeErro('videoIlustrativo2')" id="videoIlustrativo2" width="560" height="315" src="https://www.youtube.com/embed/9MVOg1m2FEM?si=lMM37CnePz1_enok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe onerror="iframeErro('videoIlustrativo3')" id="videoIlustrativo3" width="560" height="315" src="https://www.youtube.com/embed/TOGXAZLo2yM?si=ae2kMDYvrJ03C4jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe onerror="iframeErro('videoIlustrativo4')" id="videoIlustrativo4" width="560" height="315" src="https://www.youtube.com/embed/W2CCnz71gLQ?si=PUIYqf5xgWS_g8cD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="containerVid__Ilustrativos">
+            <iframe loading="lazy" preload="none" onerror="iframeErro('videoIlustrativo1')" id="videoIlustrativo1" width="560" height="315" src="https://www.youtube.com/embed/-5qrWJcjWYY?si=0F45Tyy4YbeSAG4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" preload="none" onerror="iframeErro('videoIlustrativo2')" id="videoIlustrativo2" width="560" height="315" src="https://www.youtube.com/embed/9MVOg1m2FEM?si=lMM37CnePz1_enok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" preload="none" onerror="iframeErro('videoIlustrativo3')" id="videoIlustrativo3" width="560" height="315" src="https://www.youtube.com/embed/TOGXAZLo2yM?si=ae2kMDYvrJ03C4jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" preload="none" onerror="iframeErro('videoIlustrativo4')" id="videoIlustrativo4" width="560" height="315" src="https://www.youtube.com/embed/W2CCnz71gLQ?si=PUIYqf5xgWS_g8cD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
+
     <div class="contato">
-        <h3>Contato</h3>
-        <div class="contatoIndividual">
-            <p>Jeferson:</p>
-            <a target="_blank" href="https://wa.me//5534992359293?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">34992359293</a>
-            <a target="_blank" href="https://www.instagram.com/jefcostadanca/?hl=pt-br">@jefcostadanca</a>
+        <h3>Organização:</h3> 
+
+        <div class="containerCards">
+            <div class="cartao-Estica">
+                <div class="limiteImg">
+                    <img class="imgCard imgCardJef" src="./src/img/jefImg.jpeg" alt="" />
+                </div>
+
+                <div>
+                    <h2 class="h2Card">Jeferson</h2>
+                    
+                    <a target="_blank" href="https://www.instagram.com/jefcostadanca/?hl=pt-br">
+                        <button class="btnCard instagram">instagram</button>
+                    </a>
+                    <a target="_blank" href="https://wa.me//5534992359293?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">
+                        <button class="btnCard whatsapp">whatsapp</button>
+                    </a>
+                </div>
+            </div>
+            <div class="cartao-Estica">
+                <div class="limiteImg">
+                    <img
+                        class="imgCard imgCardMau"
+                        src="./src/img/mauricioImg.png"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h2 class="h2Card">Maurício</h2>
+                    <a target="_blank" href="https://www.instagram.com/mauriciojonasdematos/?hl=pt-br">
+                        <button class="btnCard instagram">instagram</button>
+                    </a>
+                    <a target="_blank" href="https://wa.me//5534988674620?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">
+                        <button class="btnCard whatsapp">whatsapp</button>
+                    </a>
+                </div>
+            </div>
+            <div class="cartao-Estica">
+                <div class="limiteImg">
+                    <img
+                        class="imgCard"
+                        src="./src/img/evertonImg.png"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h2 class="h2Card">Everton</h2>
+                    <a target="_blank" href="https://www.instagram.com/evertonrochalira/?hl=pt-br">
+                        <button class="btnCard instagram">instagram</button>
+                    </a>
+                    <a target="_blank" href="https://wa.me//5534991851738?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">
+                        <button class="btnCard whatsapp">whatsapp</button>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="contatoIndividual">
-            <p>Maurício:</p>
-            <a target="_blank" href="https://wa.me//5534988674620?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">34988674620</a>
-            <a target="_blank" href="https://www.instagram.com/mauriciojonasdematos/?hl=pt-br">@mauriciojonasdematos</a>
-        </div>
-        <div class="contatoIndividual">
-            <p>Everton:</p>
-            <a target="_blank" href="https://wa.me//5534991851738?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.">34991851738</a>
-            <a target="_blank" href="https://www.instagram.com/evertonrochalira/?hl=pt-br">@evertonrochalira</a>
-        </div>
+
     </div>
+
 </body>
 <script src="./src/script/script.js"></script>
 </html>

@@ -12,6 +12,7 @@ npx sass --watch src/sass/style.sass:src/css/style.css
 
 
 *****
+link grupo whatsapp
 https://wa.me//55XXXXXXXXXXX?text=Opa%20blz?%20Gostaria%20de%20saber%20mais%20sobre%20o%20Zouk%20no%20parque.
 *****
 Esquema de pastas
@@ -28,3 +29,7 @@ ZOUKNOPARQUECONVITE
 
 link do repositório
 https://github.com/jefersoncostabr/ZouknoParqueConvite.git
+
+
+
+*passar  para mobile first
