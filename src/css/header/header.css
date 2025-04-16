@@ -1,0 +1,68 @@
+h1 {
+    margin: 40px;
+}
+
+.containerHeader {
+    margin-bottom: 50px; 
+} 
+
+.convite, .containerImagens, .videoAbertura {
+    margin: 40px;
+}
+
+.pConvite {
+    margin: 60px;
+}
+
+.containerHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 393px) {
+    .containerImagens {
+        display: 'flex';
+        overflow-x: auto;
+        width: 100%; /* ou uma largura fixa, como 800px */
+        white-space: nowrap; /* para evitar que as imagens quebrem linha */
+    }
+
+    .videoAbertura {
+        width: 100%;
+    }
+}
+
+@media (min-width: 394px) and (max-width: 618px) {
+    .containerImagens {
+        display: 'flex';
+        overflow-x: auto;
+        width: 100%; /* ou uma largura fixa, como 800px */
+        white-space: nowrap; /* para evitar que as imagens quebrem linha */
+    }
+
+    .videoAbertura {
+        width: 100%;
+    }
+}
+
+@media (min-width: 619px) and (max-width: 768px) {
+    .containerImagens {
+        display: 'flex';
+        overflow-x: auto;
+        width: 100%; /* ou uma largura fixa, como 800px */
+        white-space: nowrap; /* para evitar que as imagens quebrem linha */
+    }
+}
+
+@media (min-width: 769px) {       
+    
+    .containerImagens {
+        display: 'flex';
+        overflow-x: auto;
+        width: 100%; /* ou uma largura fixa, como 800px */
+        white-space: nowrap; /* para evitar que as imagens quebrem linha */
+    }
+  
+}

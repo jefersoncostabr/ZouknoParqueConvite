@@ -49,3 +49,19 @@ function handleClick() {
 
 containerImagens.addEventListener('mouseover', handleMouseOver);
 containerImagens.addEventListener('click', handleClick);
+
+function getTamanhoTela() {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const screenWidth = screen.width;
+    const screenHeight = screen.height;
+  
+    console.log(`Largura da viewport (vw): ${vw}px`);
+    console.log(`Altura da viewport (vh): ${vh}px`);
+    console.log(`Largura da tela: ${screenWidth}px`);
+    console.log(`Altura da tela: ${screenHeight}px`);
+}
+
+// setInterval(() => {
+//     getTamanhoTela();
+// }, 1500);

@@ -31,5 +31,12 @@ link do repositório
 https://github.com/jefersoncostabr/ZouknoParqueConvite.git
 
 
+*Formato das Telas*
 
-*passar  para mobile first
+@media (max-width: 393px) {}
+
+@media (min-width: 394px) and (max-width: 618px) {}
+
+@media (min-width: 619px) and (max-width: 768px) {}
+
+@media (min-width: 769px) {}

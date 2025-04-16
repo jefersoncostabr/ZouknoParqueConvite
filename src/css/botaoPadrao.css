@@ -1,26 +1,21 @@
-.btn1{
+.btnPadrao1{
     border: none;
     /* background: #77eb20; */
     background: #9beab9;
     color: white;
     /* height:40px; */
     /* width:100px; */
-    padding:8px;
     font-weight:bold;
     font-size:20px;
+    padding:15px 30px;
     margin:30px;
     user-select:none;
     cursor:pointer;
     border-radius:5px;
     text-align:center;            
 }
-.btn1:hover{
+
+.btnPadrao1:hover{
     background: #3cad68;
     transition: .2s;
 }
-
-.btnW:hover{
-    color: white;
-    transition: .2s;
-}
-

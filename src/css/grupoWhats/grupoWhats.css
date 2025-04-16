@@ -1,0 +1,11 @@
+.containerGrupoWhats {
+    margin: 50px;
+}
+
+@media (max-width: 393px) {}
+
+@media (min-width: 394px) and (max-width: 618px) {}
+
+@media (min-width: 619px) and (max-width: 768px) {}
+
+@media (min-width: 769px) {}

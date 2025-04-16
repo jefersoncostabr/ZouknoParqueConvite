@@ -1,0 +1,78 @@
+h3 {
+    margin: 20px;
+}
+
+.alerta {
+    font-size: 11px;
+}
+
+@media (max-width: 393px) {
+    .containerInformacoes {
+        gap: 15px;
+        width: 100%;
+    }
+    .ultimoCartaz {
+        width: 100vw;
+        height: auto;
+    }
+    .iframeMaps {
+        width: 100vw;
+        max-width: 100vw;
+        height: 450px;
+    }
+}
+
+@media (min-width: 394px) and (max-width: 618px) {
+    .containerInformacoes {
+        gap: 15px;
+        width: 100%;
+    }
+    .ultimoCartaz {
+        width: 100vw;
+        height: auto;
+    }
+    .iframeMaps {
+        width: 100vw;
+        max-width: 100vw;
+        height: 450px;
+    }
+}
+
+@media (min-width: 619px) and (max-width: 768px) {
+    .containerInformacoes {
+        gap: 15px;
+        width: 100%;
+    }
+    .ultimoCartaz {
+        width: 100vw;
+        height: auto;
+    }
+    .iframeMaps {
+        width: 100vw;
+        max-width: 100vw;
+        height: 450px;
+    }
+}
+
+@media (min-width: 769px) {
+    .ultimoCartaz {
+        width: 70vw;
+        height: auto;
+      }
+      
+    .containerInformacoes {
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .iframeMaps {
+        width: 95vw;
+        max-width: 100vw;
+        height: 450px;
+    }
+    
+    .containerInformacoes p {
+        width: 100%;
+        text-align: center;
+    }
+}
