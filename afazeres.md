@@ -5,6 +5,7 @@ conferir todos os formatos
 ~~separar os arquivos css~~
 ~~colocar container na parte inicial~~
     ~~separar css~~
+aumentar a fonte da descrição do site no formato desktop
 
 juntar css de @media
     ~~header~~
