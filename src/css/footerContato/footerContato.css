@@ -16,7 +16,7 @@
     display: block;
     width: max-content;
     height: 200px;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
 }
 
@@ -24,11 +24,11 @@
     width: 250px;
     height: 200px;
     object-fit: cover;
-    border-radius: 0px 0px 10px 10px;    
+    border-radius: 0px 0px 10px 10px;
 }
 
-.h2Card{
-     margin: 15px;
+.h2Card {
+    margin: 15px;
 }
 
 /* ESTICA CARTAO => .cartao-Estica */
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    width: fit-content; 
+    width: fit-content;
     /* width: 250px; */
     height: auto;
     /* border: transparent 1px black; */
@@ -58,35 +58,58 @@
 }
 
 /* Botões do cartão */
-.btnInstagram, .btnWhatsapp {
-    font-size: 50px;
-    margin: 0px 10px 20px 10px;
-    /* background-color: blueviolet; */
-    display: inline-block;
+.btnInstagram,
+.btnWhatsapp {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    margin: 0 8px 20px 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btnInstagram i, .btnWhatsapp i {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-}
-  
 .btnInstagram {
-    color: #C13584;
+    color: #c13584;
 }
 
 .btnWhatsapp {
-    color: #25D366;
+    color: #25d366;
 }
 
-.btnInstagram:hover, .btnWhatsapp:hover {
-    box-shadow: 2px 2px 3.7px #000;
+.btnInstagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(193, 53, 132, 0.4);
 }
 
-@media (max-width: 393px) {}
+.btnWhatsapp:hover {
+    background-color: #25d366;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
 
-@media (min-width: 394px) and (max-width: 618px) {}
+@media (max-width: 393px) {
+}
 
-@media (min-width: 619px) and (max-width: 768px) {}
+@media (min-width: 394px) and (max-width: 618px) {
+}
 
-@media (min-width: 769px) {}
+@media (min-width: 619px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) {
+}

@@ -8,18 +8,25 @@
 /* verde/azul claro */
 /* verde médio */
 body {
-     background: linear-gradient(#9beab9, #77eb20);
-     overflow-x: hidden;
+    background: linear-gradient(#9beab9, #77eb20);
+    /* Gradiente moderno (fade) de verde escuro para verde claro */
+    background: linear-gradient(to bottom, #11998e, #38ef7d);
+    min-height: 100vh;
+    /* background-attachment: fixed; */
+    overflow-x: hidden;
 }
 
-.flexAlinhaColuna, .contato, .containerGrupoWhats, .containerInformacoes {
+.flexAlinhaColuna,
+.contato,
+.containerGrupoWhats,
+.containerInformacoes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-img{
+img {
     width: auto;
     height: 250px;
 }
@@ -28,10 +35,86 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 393px) {}
-  
-@media (min-width: 394px) and (max-width: 618px) {}
+/* Estilos de Texto do Header */
+h1 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-align: center;
+}
 
-@media (min-width: 619px) and (max-width: 768px) {}
+.convite {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    color: #f1f1f1;
+    max-width: 700px;
+    margin: 1rem auto 2rem auto;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+}
 
-@media (min-width: 769px) {}
+/* --- Botões e Interatividade --- */
+
+/* Botão Padrão (Maps) - Estilo Clean e Legível */
+.btnPadrao1 {
+    background-color: #ffffff !important;
+    color: #00695c !important; /* Verde escuro para contraste */
+    border: none;
+    padding: 15px 32px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.btnPadrao1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5 !important;
+}
+
+/* Ícone do WhatsApp - Estilo Circular Específico */
+.containerGrupoWhats .fa-whatsapp.btnPadrao1 {
+    width: 90px;
+    height: 90px;
+    font-size: 3.5rem;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #25d366 !important; /* Verde Oficial WhatsApp */
+    background-color: #ffffff !important;
+    margin: 0 auto 15px auto;
+}
+
+.containerGrupoWhats .fa-whatsapp.btnPadrao1:hover {
+    color: #128c7e !important;
+    transform: scale(1.1) rotate(-10deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 393px) {
+}
+
+@media (min-width: 394px) and (max-width: 618px) {
+}
+
+@media (min-width: 619px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) {
+}
